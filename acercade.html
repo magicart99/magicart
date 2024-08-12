@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de - MAGIC ART</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background: none;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      /* overflow: hidden; */ /* Comentado para permitir el desplazamiento */
+      min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la ventana */
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para la legibilidad del texto */
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 80px; /* Margen superior para separar del navbar */
+    }
+    .footer p {
+      margin: 0;
+      color: rgb(255, 36, 47); /* Color amarillo */
+      font-size: 1.2em; /* Tamaño de fuente más grande */
+      font-weight: bold; /* Texto en negrita */
+    }
+    .navbar-brand img {
+      height: 40px; /* Tamaño del logo */
+    }
+    .nav-item .nav-link.active {
+      color: rgb(255, 36, 47); /* Color de la pestaña activa */
+    }
+    video#background-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+    }
+    .navbar a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+  </style>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="background-video">
+    <source src="img/video3.mp4" type="video/mp4">
+    Tu navegador no soporta videos en HTML5.
+  </video>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="inicio.php"><img src="img/LOGOTIPO1.png" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inicio.php">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.php">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.php">Inicio Sesion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="acercade.html">Acerca de</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Acerca de -->
+  <div class="container">
+    <h2 class="text-center">Acerca de MAGIC ART</h2>
+    <p>MAGIC ART es una tienda de arte dedicada a proporcionar los mejores materiales y herramientas para artistas de todos los niveles. Fundada en 2024, nuestra misión es inspirar y apoyar a la comunidad artística con productos de alta calidad y un servicio excepcional.</p>
+    <p>En nuestra tienda, encontrarás una amplia gama de productos, desde pinceles y pinturas hasta lienzos y esculturas. Nos enorgullece ofrecer una selección curada de artículos que cumplen con los más altos estándares de calidad.</p>
+    <p>Ya seas un artista profesional o un principiante apasionado, MAGIC ART es tu lugar de referencia para todo lo relacionado con el arte.</p>
+    
+    <h3>Quiénes Somos</h3>
+    <p><strong>Historia:</strong> MAGIC ART fue fundada en 2024 por un grupo de artistas apasionados con la visión de crear un espacio donde artistas de todos los niveles pudieran encontrar los mejores materiales y herramientas para sus proyectos. Desde nuestros humildes comienzos, hemos crecido hasta convertirnos en una de las tiendas de arte más reconocidas en la comunidad artística.</p>
+    <p><strong>Misión:</strong> Inspirar y apoyar a la comunidad artística proporcionando productos de alta calidad y un servicio excepcional.</p>
+    <p><strong>Visión:</strong> Ser la tienda de arte líder y preferida por artistas de todos los niveles, reconocida por la calidad de nuestros productos y la excelencia en nuestro servicio.</p>
+    <p><strong>Objetivos:</strong></p>
+    <ul>
+      <li>Proporcionar una amplia gama de productos de arte de alta calidad.</li>
+      <li>Ofrecer un servicio al cliente excepcional y personalizado.</li>
+      <li>Fomentar la creatividad y el desarrollo artístico en la comunidad.</li>
+      <li>Expandir nuestra presencia y accesibilidad tanto en tiendas físicas como en línea.</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2024 MAGIC ART. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-end">
+          <a href="https://www.facebook.com/ficticio" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com/ficticio" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/ficticio" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/ficticio" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
